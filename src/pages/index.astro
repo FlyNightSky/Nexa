@@ -1,0 +1,72 @@
+---
+import Layout from "../components/layout.astro";
+import Quote from "../components/quote.astro";
+import Card from "../components/card.astro";
+import Small from "../components/quote-small.astro";
+---
+
+<Layout title="Home / Nexa">
+  <Quote
+    image_url="/quote-images/greed.jpg"
+    ,
+    quote="Success is not measured by the absence of challenges, but by the strength we summon to overcome them."
+    ,
+    quote_by="STREAMSCRIBE"
+    ,
+    image_credit="#"
+    ,
+    credit_name="STREAMSCRIBE"
+  />
+  <div class="border"></div>
+  <section class="m-5 text-center md:text-left">
+    <h1 class="text-center plainreg text-md md:text-lg lg:text-xl xl:text-2xl">
+      Learning & Creating
+    </h1>
+    <div class="lg:hidden xl:hidden">
+      <div class="flex justify-center h-96 overflow-hidden md:h-[560px]">
+        <img
+          src="/lime.jpg"
+          alt="Cover-Image"
+          class="w-10/12 h-full object-cover rounded-md"
+        />
+      </div>
+    </div>
+
+    <div class="hidden lg:flex xl:flex justify-center">
+      <div class="w-4/5 xl:w-3/5 h-[500px] overflow-hidden">
+        <img
+          src="/lime.jpg"
+          alt="Image-Home"
+          class="w-full h-full object-cover rounded"
+        />
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+		<div class="plainreg m-5">
+			<h1 class="text-xl">About</h1>
+			<h4>NEXA</h4>
+		</div>
+      <div class="flex justify-center">
+		<p class="plain text-xl lg:text-3xl w-7/12">
+          NEXA IS A PASSION PROJECT IT IS MY PROTOFOLIO, MOTIVATIONAL, AND A
+          PROXY DISTRUPUTER. NEXA IS MY DREAM PROJECT AND i AM HAPPY TO SHOW IT
+          WITH YOU.
+        </p>
+      </div>
+	  <div class="flex justify-center w-full">
+		<h1 class="pt-8 plain w-1/2">helping you to stop internet censorship & give you motivation for all your endevors</h1>
+	  </div>
+    </div>
+	<Small image_url="https://www.usatoday.com/gcdn/presto/2023/04/06/USAT/23abce1c-0611-4bdd-93bf-4002bdf441a8-sw21_ruth_0417.JPG?width=1200&disable=upscale&format=pjpg&auto=webp", credit_name = "USA TODAY", image_credit = "https://www.usatoday.com/gcdn/presto/2023/04/06/USAT/23abce1c-0611-4bdd-93bf-4002bdf441a8-sw21_ruth_0417.JPG?width=1200&disable=upscale&format=pjpg&auto=webp", quote_by = "Babe Ruth", quote = "Every strike brings me sloser to the next home run"/>
+  </section>
+<div class="flex justify-center">
+	<div class="grid grid-cols-2 gap-4">
+		<Card card_title = "Documentation", card_image = "https://images.unsplash.com/photo-1509475826633-fed577a2c71b?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", card_description = "Dcocumentaion page for this website, you cand find tutorial here on various topics such as advanced scratch, C++ coding and much more!", card_link = "/Docs"/>
+		<Card card_title = "Documentation", card_image = "https://images.unsplash.com/photo-1552381810-0e4a585b44ca?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" card_description = "Dcocumentaion page for this website, you cand find tutorial here on various topics such as advanced scratch, C++ coding and much more!", card_link = "/Docs"/>
+		<Card card_title = "Documentation", card_image = "https://images.unsplash.com/photo-1509475826633-fed577a2c71b?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" card_description = "Dcocumentaion page for this website, you cand find tutorial here on various topics such as advanced scratch, C++ coding and much more!", card_link = "/Docs"/>
+		<Card card_title = "Documentation", card_image = "https://images.unsplash.com/photo-1509475826633-fed577a2c71b?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" card_description = "Dcocumentaion page for this website, you cand find tutorial here on various topics such as advanced scratch, C++ coding and much more!", card_link = "/Docs"/>
+
+	  </div>
+</div>
+</Layout>

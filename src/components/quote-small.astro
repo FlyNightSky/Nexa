@@ -1,0 +1,18 @@
+---
+import '../global.css';
+const { image_url, quote, quote_by, image_credit, credit_name } = Astro.props;
+---
+
+
+<div class="p-5 lg:flex xl:flex lg:justify-center xl:justify-center lg:items-center xl:items-center hidden lg:block xl:block">
+    <div class="">
+      <div class="h-96 xl:h-[800px] overflow-hidden xl:pt-52">
+        <img src=`${image_url}` alt="Cover-Image" class="w-96 object-cover">
+      </div>
+    </div>
+    <div class="lg:w-4/12 xl:w-4/12 lg:ml-2 xl:ml-2 text-center">
+      <h1 class="mx-2 mt-2 text-3xl plain">{quote} - {quote_by}</h1>
+      <cite class="text-[10px] m-2 text-[#5A5A5A]">{credit_name}: <a href=`${image_credit}`>{image_credit}</a></cite>
+    </div>
+  </div>
+  

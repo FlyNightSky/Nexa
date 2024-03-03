@@ -1,0 +1,13 @@
+---
+import "../global.css";
+const { card_title, card_description, card_image, card_link, card_credit } = Astro.props;
+---
+
+<div class="inktrap border border-black w-full md:w-72 h-auto m-5">
+  <div>
+    <a href=`${card_link}`><img src=`${card_image}` alt="Image-more"  class="p-1"/></a>
+  </div>
+  <h1 class="px-2 pt-2 text-lg md:text-xl">{card_title}</h1>
+  <p class="px-2 text-[#5A5A5A] text-sm md:text-base">{card_description}</p>
+  <h1 class="p-2 text-sm md:text-base plain">To: {card_link}</h1>
+</div>

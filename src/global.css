@@ -1,0 +1,32 @@
+/* Define @font-face for Inktrap Regular */
+@font-face {
+    font-family: 'inktrap';
+    src: url('/fonts/InktrapRegular.otf') format('opentype');
+  }
+  
+  /* Define @font-face for Plain Light */
+  @font-face {
+    font-family: 'plain';
+    font-weight: normal; /* Assuming 'Light' corresponds to normal weight */
+    src: url('/fonts/plainlight.otf') format('opentype');
+  }
+  
+  /* Define @font-face for Plain Regular */
+  @font-face {
+    font-family: 'plainreg';
+    src: url('/fonts/PlainRegular.otf') format('opentype');
+  }
+
+
+  .ink{
+    font-family: 'inktrap';
+  }
+
+  .plain{
+    font-family: 'plain';
+  }
+
+  .plainreg{
+    font-family: 'plainreg';
+  }
+  
